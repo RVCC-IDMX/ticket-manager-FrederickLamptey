@@ -1,6 +1,10 @@
+const chalk = require('chalk');
+// eslint-disable-next-line prefer-destructuring
+const log = console.log;
+
 class EmailService {
   send(email) {
-    console.log(`Sending email to ${email}`);
+    log(chalk.gray(`Sending email to ${email}`));
   }
 }
 
